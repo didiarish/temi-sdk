@@ -73,6 +73,7 @@ internal class TemiSdkServiceConnection {
     @SuppressLint("LongLogTag")
     private fun forceStop() {
         Log.d(TAG, "forceStop()")
-        Process.killProcess(Process.myPid())
+        // commented out to prevent crash when not running in RobotTemi
+//        Process.killProcess(Process.myPid())
     }
 }
